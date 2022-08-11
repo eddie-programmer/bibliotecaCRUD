@@ -1,0 +1,31 @@
+Para conocer el error, vaya a app/Config/Boot/production.php y establezca display_errors en 1 como se muestra a continuación.
+
+ini_set('mostrar_errores', '1');
+
+Ahora, verá el error real a continuación
+
+https://stackoverflow.com/questions/57852169/whoops-we-seem-to-have-hit-a-snag-please-try-again-later
+https://stackoverflow.com/questions/68051770/codeigniter-codeigniter-exceptions-frameworkexception
+
+public/ 
+app/ estructuras para crear aplicacion
+	->Controllers, recolectar infor de la base
+	->Config, configuracion de la base de datos
+	->Models, 
+	->Views,
+	
+
+:::::::::::::: MVC ::::::::::::::::::::
+
+
+routes -> Controllers -> models (base de datos)
+				 	  -> views (reune info y la muestra)
+					  
+CREAR MODELO Y CONTROLADOR:
+F1 -> Spark: Create Model -> Libro(nombre del modelo) -> libros(nombre de tabla DB) -> No -> Yes (Crear controlador para el modelo) -> Libros
+
+CREAR RUTA:
+F1 -> Spark: Create Route -> listar(nombre de la ruta) -> Libros(nombre del controlador) -> index(nombre de la funcion del controlador)
+
+HEADER Y FOOTER
+routes -> Controllers -> views -> template(carpeta que creamos) ->
